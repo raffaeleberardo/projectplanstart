@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+*{
+  padding : 0;
+  margin : 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Montserrat', serif;
+  overflow-x: hidden;
+
+  max-width: 100vw;
+}
+
+header{
+  width: 100%;
+  max-width: 100%;
+  background-color: #3498DB;
+  color: #fff;
+
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+
+  display: flex;
+  justify-content: space-around;
+
+  flex-wrap: wrap;
+}
+
+footer{
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3498DB;
+  padding: 3px;
+}
+
+h1{
+    width: 95%;
+}
+
+img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.push{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  transition: margin-left .5s;
+}
+
+main{
+
+  margin: 20px;
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-width: 50%;
+  min-height: 30vh;
+  margin-bottom: 20px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+form > label{
+  align-self: flex-start;
+}
+
+input[type=text], input[type=password]{
+  width: 100%;
+  padding: 5px;
+}
+
+input[type=submit]{
+  width: 75%;
+  padding: 5px;
+  border-style: none;
+  background-color: #3498DB;
+  font-family: 'Montserrat', sans-serif;
+  align-self: center;
+  cursor: pointer;
+}
+
+input[type=submit]:hover{
+  background-color: #1276B9;
+}
+
+h2{
+  font-family: 'Roboto Slab', serif;
+  width: 95vw;
+}
+
+.activity-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px;
+  width: 100vw;
+}
+
+.activity{
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  width: 90vw;
+  min-height: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+select{
+  width: 50%;
+  border-radius: 5px;
+}
+
+
+button{
+  min-width: 25%;
+  height: 100%;
+  border-style: none;
+  border: 1px solid #000;
+  background-color: #E74C3C;
+  border-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+  padding: 5px;
+
+  font-family: 'Montserrat', sans-serif;
+}
+
+button:hover{
+  background-color: #D80505;
+}
+
+.groupButtons{
+  display: flex;
+  justify-content: space-between;
+  min-width: 50%;
+}
+
+.check{
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
+  width: 40%;
+}
+
+.check label{
+  width: 95%;
+  word-break: break-word;
+}
+
+del{
+  word-break: break-word;
+}
+
+.fa-edit, .fa-trash-alt{
+  font-size : 20px;
+}
+
+
+#add_activity{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  display: none;
+  position: fixed;
+  height: 150px;
+  right: 40px;
+  bottom: 15px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#add_activity input{
+  width: 75%;
+}
+
+#show_add_activity{
+  position: fixed;
+  z-index: 1;
+  height: 50px;
+  min-width: 50px;
+  max-width: 50px;
+  bottom: 10px;
+  right: 30px;
+  border-style: none;
+  border-radius: 50%;
+  background-color: #E67E22;
+  font-size: 2em;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.8);
+  cursor: pointer;
+}
+
+#show_add_activity:hover{
+  background-color: #D56D00;
+}
+
+/*SIDENAV*/
+/* The side navigation menu */
+#openNav, #closeNav{
+  font-size: 2em;
+  cursor: pointer;
+}
+
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closeNav {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
